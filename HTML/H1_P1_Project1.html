@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1><sup>B</sup>T<sub>N</sub> Book Ticket Now</h1>
+        <p><i>Book your ticket <q>easy</q>!</i></p>
+    </div>
+    <hr />
+
+    We serve to the following cities
+    <ul>
+        <li>SFO </li>
+        <li>San Jose</li>
+        <li>Oakland</li> 
+    </ul>
+
+    <strong>Today's Deal:</strong> SFO to San Jose <s>$10</s>, <u>now it is $5.</u><br /><br />
+
+    To book the ticket, pls do the following steps
+    <ol  start="0" >
+        <li>Call 800-123-1234</li> 
+        <li>Press 1</li>
+        <li value="5">Press 5</li>
+    </ol>
+
+    
+    <form>
+        <fieldset>
+              <legend>Personal Info:</legend>
+            <table>
+                <tr>
+                    <td><label>Full Name</label></td>
+                    <td><input type="text" required="required" /></td>
+                </tr>
+
+                <tr>
+                    <td><label>Age</label></td>
+                    <td><input pattern="[0-9]" type="number" name="part"  required="required"  title="A part number is a digit followed by three uppercase letters."/></td>
+                </tr>
+
+                <tr>
+                    <td><label>Comments</label></td>
+                    <td><textarea></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label>Telephone</label></td>
+                    <td><input type=tel  required="required" ></td>
+                </tr>
+
+                <tr>
+                    <td><label>E-mail</label></td>
+                    <td><input type=email  required="required" ></td>
+                </tr>
+
+                 <tr>
+                    <td>
+                        <fieldset>
+                            <legend> Gender </legend>
+                            <p><label> <input type=radio name=size> Male </label></p>
+                            <p><label> <input type=radio name=size> Female</label></p>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend> Membership </legend>
+                            <p><label> <input type=checkbox> Gold Card </label></p>
+                            <p><label> <input type=checkbox> Partner Card </label></p>
+                        </fieldset>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Depature Date<input type=date ></label></td>
+                    <td><label>Time<input type=time min="11:00" max="21:00" step="900"></label></td>
+                </tr>
+
+                <tr>
+                    <td><label>Bus Preference</label></td>
+                    <td>
+                        <select name="BusType">
+                            <option value="NoWifi">Basic Bus</option>
+                            <option value="Wifi">Bus with Wifi</option>
+                            <option value="Rapid">Rapid Bus with Wifi</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Food</label></td>
+                    <td>
+                        <input type=text list=foods>
+                        <datalist id=foods>
+                        <option value="Peanut">
+                        <option value="Coke">
+                        <option value="toast">
+                        </datalist>
+                    </td>
+                </tr>
+
+				<tr>
+                    <td>Overall satisfaction</td>
+                    <td><input name="Range" type="range"  id="Range" /></td>
+                </tr>
+				
+				<tr>
+                    <td>Preferred color(Free T-Shirt)</td>
+                    <td><input name="Color" type="color" id="Color" /></td>
+                </tr>
+				
+                 <tr>
+                    <td><button type="submit">Buy Ticket</button> <button type="reset">Clear</button></td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+         </fieldset>
+    </form>
+       
+
+</body>
+</html>
+

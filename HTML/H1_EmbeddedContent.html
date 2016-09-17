@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+	<title>Awesome page title</title>
+</head>
+<body>
+
+    <!--Embedded Content -->
+    <embed src="helloworld.swf" width="200" height="200 type="application/vnd.adobe.flash-movie" />
+
+    <!--iframe -->
+    <iframe src="demo_iframe_sandbox.htm"  name="iframe_a" width="200" height="200" sandbox></iframe>
+    <iframe src="demo_iframe_sandbox_origin.htm" sandbox="allow-same-origin allow-scripts"></iframe>
+    <iframe src="demo_iframe.htm"  srcdoc="<p>Hello world!</p>" seamless></iframe>
+
+     <!--object & param -->
+    <object data="horse.wav">
+        <param name="autoplay" value="true">
+    </object>
+	
+	<video controls>
+		<source src="foo.webm" type="video/webm">
+		I'm sorry; your browser doesn't support HTML5 video.
+	</video>
+
+</body>
+</html>

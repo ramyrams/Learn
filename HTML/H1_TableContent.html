@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+	<title>Awesome page title</title>
+</head>
+<body>
+
+	<!-- Table Content -->
+
+    <!--table, caption, colgroup, col, thead, tbody, tfoot, th, tr, td-->
+   <table>
+        <caption>Sales Summary</caption>
+
+        <!--    The <colgroup> tag specifies a group of one or more columns in a table for formatting.
+            The <colgroup> tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.-->
+         <!--Note: The <colgroup> tag must be a child of a <table> element, after any <caption> elements and before any <thead>, <tbody>, <tfoot>, and <tr> elements.-->
+        <colgroup>
+            <col span="2" style="background-color:red">
+            <col style="background-color:yellow">
+        </colgroup>
+
+          <tfoot>
+              <tr>
+                 <td>City</td>
+                 <td>Sum</td>
+                 <td>$180</td>
+              </tr>
+         </tfoot>
+
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td>Fremont</td>
+                <td>January</td>
+                <td>$100</td>
+             </tr>
+            <tr>
+                <td>Fremont</td>
+                <td>Feb</td>
+                <td>$80</td>
+            </tr>
+        </tbody>    
+  
+    </table>
+
+</body>
+</html>
+

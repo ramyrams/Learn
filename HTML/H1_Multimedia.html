@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+	<title>Awesome page title</title>
+</head>
+<body>
+
+    <!--Image & multimedia-->
+	<img src="mdn-logo-sm.png" alt="MDN">
+	<a href="https://developer.mozilla.org/"><img src="mdn-logo-sm.png" alt="MDN"></a>
+	<img src="mdn-logo-sm.png"  alt="MDN" srcset="mdn-logo-HD.png 2x">
+	<img src="clock-demo-thumb-200.png" alt="Clock"  srcset="clock-demo-thumb-200.png 200w, clock-demo-thumb-400.png 400w" sizes="(min-width: 600px) 200px, 50vw">
+	
+	
+   <!--video,  track -->
+    <video width="320" height="240" preload controls>
+        <source src="forrest_gump.mp4" type="video/mp4">
+        <source src="forrest_gump.ogg" type="video/ogg">
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+    </video>
+
+    <!--audio -->
+    <audio autoplay="autoplay" controls="controls">
+         <source src="movie.ogg" type="video/ogg" media="screen and (min-width:320px)">
+        <source src="file.mp3" /> 
+        <a>Download this file.</a>
+    </audio>
+
+    <!-- img, map,  area-->
+    <img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+      <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+      <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+    </map>
+
+</body>
+</html>

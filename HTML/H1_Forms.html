@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+	<title>Awesome page title</title>
+</head>
+<body>
+
+
+ <!-- --------------------->
+    <!-- Form -->
+
+     <!-- button. -->
+    <button type="button">Click Me!</button>
+    <button type="button" autofocus>Click Me!</button>
+    <button type="button" disabled>Click Me!</button>
+    <button type="button" onclick="window.location='http://www.littlewebhut.com'"> Go To Little Web Hut</button>
+
+    <button type="reset" value="Reset">Reset</button>
+    <button type="reset"><img src="yel.gif" alt="reset"><br>Reset</button>
+    
+    <button type="submit" name="subject" value="CSS" disabled="disabled">CSS</button>
+    <button type="submit" formmethod="post" formaction="demo_post.asp" formenctype="text/plain" formtarget="_blank" formnovalidate >Submit using POST</button>
+    
+
+
+
+
+    <!-- A <fieldset> element located outside a form (but still a part of the form): -->
+    <fieldset name="personalia" form="form1" disabled>
+        <legend>Personalia:</legend>
+        Name: <input type="text"><br>
+        Email: <input type="text"><br>
+    </fieldset>
+
+     <!-- form & keygen -->
+    <form action="demo_form.asp" accept-charset="ISO-8859-1" method="get" autocomplete="on" enctype="multipart/form-data" name="myForm"  target="_blank" novalidate>
+
+        <keygen name="security" form="secureform" keytype="rsa" autofocus disabled>
+    </form>
+
+    <!-- label -->
+    <label for="male" form="form1">Male</label>
+
+     <!-- select, optgroup, option -->
+    <select>
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+    </select>
+
+
+    <!-- datalist. -->
+
+    <!--For the select element, the user is required to select one of the options you've given. 
+        For the datalist element, it is suggested that the user select one of the options you've given, but he can actually enter anything he wants in the input. -->
+    
+    <input type=text list=browsers>
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Google Chrome">
+    </datalist>
+
+
+
+    <!-- meter -->
+    <meter form="form1" name="x1" min="0" low="40" high="90" max="100" value="95" optimum="0.5"></meter>
+
+     <!-- progress -->
+    <progress value="22" max="100"></progress>
+
+    <!-- output -->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" value="50">100 + <input type="number" id="b" value="50"> = <output name="x" for="a b"></output>
+    </form>
+
+    <!-- textarea -->
+    <textarea rows="4" cols="50">At w3schools.com you will learn how to make a website. </textarea> 
+
+    <!-- input -->
+    <input type="text" id="someInput" name="pin" maxlength="4" size="4" placeholder="First name" required autofocus pattern="[A-Za-z]{3}" title="Three letter country code">
+    <input type="text" name="country" value="Norway" readonly disabled>
+
+    <input type="file" name="pic" accept="image/*" multiple>
+
+    <input type="image" src="submit.gif" alt="Submit" width="48" height="48">
+
+    
+    <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+    <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
+
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female
+
+    
+    <input type="number" name="quantity" min="1" max="50" step="3">
+    
+    <input type="password" name="pw" pattern=".{6,}" title="Six or more characters">
+    <input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+    <input type="search" name="googlesearch" pattern="[^'\x22]+" title="Invalid input">
+    
+	<input type="tel" name="usrtel">
+    <input type="url" name="website" pattern="https?://.+" title="Include http://">
+    <input type="email" name="email" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+ 
+    <input type="reset">
+    
+    <input type="button" value="Click me" onclick="msg()">
+
+    <input type="submit" formaction="demo_admin.asp" formmethod="post" value="Submit as admin"  formnovalidate="formnovalidate" formenctype="multipart/form-data" formtarget="_blank">
+   
+    <input type="date" name="bday" max="1979-12-31" min="2000-01-02">
+    <input type="time" name="usr_time">
+    <input type="datetime" name="bdaytime">
+    <input type="month" name="bdaymonth">
+    <input type="datetime-local" name="bdaytime">
+    <input type="week" name="week_year">
+
+    <input type="hidden" name="country" value="Norway">
+    
+    <input type="color" name="favcolor">
+
+    <input type="range" name="points" min="0" max="10">
+
+    <input list="browsers">
+	
+	
+    
+
+</body>
+</html>
