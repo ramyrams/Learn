@@ -24,8 +24,6 @@
     
 
 
-
-
     <!-- A <fieldset> element located outside a form (but still a part of the form): -->
     <fieldset name="personalia" form="form1" disabled>
         <legend>Personalia:</legend>
@@ -35,7 +33,6 @@
 
      <!-- form & keygen -->
     <form action="demo_form.asp" accept-charset="ISO-8859-1" method="get" autocomplete="on" enctype="multipart/form-data" name="myForm"  target="_blank" novalidate>
-
         <keygen name="security" form="secureform" keytype="rsa" autofocus disabled>
     </form>
 
@@ -91,9 +88,8 @@
 
     <input type="image" src="submit.gif" alt="Submit" width="48" height="48">
 
-    
-    <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
-    <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
+    <input type="checkbox" name="ckBike" value="Bike"> I have a bike<br>
+    <input type="checkbox" name="ckCar" value="Car" checked> I have a car<br>
 
     <input type="radio" name="gender" value="male"> Male<br>
     <input type="radio" name="gender" value="female"> Female
@@ -110,12 +106,6 @@
     <input type="url" name="website" pattern="https?://.+" title="Include http://">
     <input type="email" name="email" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
  
-    <input type="reset">
-    
-    <input type="button" value="Click me" onclick="msg()">
-
-    <input type="submit" formaction="demo_admin.asp" formmethod="post" value="Submit as admin"  formnovalidate="formnovalidate" formenctype="multipart/form-data" formtarget="_blank">
-   
     <input type="date" name="bday" max="1979-12-31" min="2000-01-02">
     <input type="time" name="usr_time">
     <input type="datetime" name="bdaytime">
@@ -130,8 +120,13 @@
     <input type="range" name="points" min="0" max="10">
 
     <input list="browsers">
-	
-	
+	 
+    <input type="reset">
+    
+    <input type="button" value="Click me" onclick="msg()">
+
+    <input type="submit" formaction="demo_admin.asp" formmethod="post" value="Submit as admin"  formnovalidate="formnovalidate" formenctype="multipart/form-data" formtarget="_blank">
+  
     
 
 </body>
